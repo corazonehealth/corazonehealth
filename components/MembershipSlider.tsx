@@ -16,7 +16,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 
 //import membershipData
-import membershipData from "@/constants/membershipdata"
+import membershipData from "@/constants/membershipData"
 
 export const MembershipSlider = () => {
   return (
