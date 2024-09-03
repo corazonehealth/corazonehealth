@@ -26,7 +26,7 @@ const brandContainerVariant = {
 
 const brandItem = {
   hidden: {
-    hidden: {y: 20, opacity: 0},
+    y: 20, opacity: 0,
   },
   show: {
     opacity: 1,
@@ -45,15 +45,16 @@ const Contact = () => {
         <div className="grid grid-cols-2 lg:grid-cols-5 py-8">
           {brandImages.map((img, index) => {
             return (
-              <div key={index}>
-                <Link 
-                className="group" 
-                href={img.href}>
-                  <Image className="opacity-50 group-hover:opacity-100 transition-all mx-auto" 
-                  src={img.src} 
-                  width={204} 
-                  height={106} 
-                  alt="brand" />
+              <div
+                key={index}>
+                <Link
+                  className="group"
+                  href={img.href}>
+                  <Image className="opacity-50 group-hover:opacity-100 transition-all mx-auto"
+                    src={img.src}
+                    width={204}
+                    height={106}
+                    alt="brand" />
                 </Link>
               </div>
             )
