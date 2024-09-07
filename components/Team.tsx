@@ -27,7 +27,7 @@ const Team = () => {
           {trainerData.map((trainer, index) => {
             return (<div key={index} className='flex flex-col items-center text-center'>
               {/*image */}
-              <div className='relative w-[320px] h-[360px] mx-auto mb-4'>
+              <div className='relative w-[320px] h-[300px] mx-auto mb-4'>
                 <Image src={trainer.image} fill alt='trainer' />
               </div>
               {/*name */}

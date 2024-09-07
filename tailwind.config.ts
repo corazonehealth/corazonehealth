@@ -23,8 +23,8 @@ const config: Config = {
       roboto: "var(--font-roboto)"
     },
     backgroundImage: {
-      hero: 'url(/assets/img/hero/bg.png)',
-      membership: "url(/assets/img/membership/bg.jpg)"
+      hero: 'url(/assets/photos/scadrun.jpg)',
+      membership: "url(/assets/photos/treadmill_training.jpg)"
     },
 
     extend: {
@@ -32,7 +32,7 @@ const config: Config = {
         primary: {
           DEFAULT: '#333',
           100: '#484848',
-          200: '#151515',
+          200: '#000000',
           300: '#111'
         },
         accent: "#d4000d",

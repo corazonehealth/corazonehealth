@@ -1,27 +1,26 @@
 const classes = [
     {
-      name: 'body building',
-      img: "/assets/img/classes/bodybuilding.jpg",
-      description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      Commodi quae cum quam in voluptate? Magni.`
+      name: 'Exercise class',
+      img: "/assets/photos/hh_ss_kenzie.jpg",
+      description: `30 minutes aerobics to strengthen 
+      the heart, improve balance, and muscular endurance.`
     },
     {
-      name: 'cardio',
-      img: "/assets/img/classes/cardio.jpg",
-      description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      Commodi quae cum quam in voluptate? Magni.`
+      name: 'Post class education sessions',
+      img: "/assets/photos/zoom_ppl.jpg",
+      description: `Topics range from how to safely exercise,
+       medication use, anatomy and physiology.`
     },
     {
-      name: 'fitness',
-      img: "/assets/img/classes/fitness.jpg",
-      description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      Commodi quae cum quam in voluptate? Magni.`
+      name: 'Case managing',
+      img: "/assets/photos/pool.jpg",
+      description: `Guidance in contacting your health professional, 
+      logging of vitals, and weekly health check-ins.`
     },
     {
-      name: 'crossfit',
-      img: "/assets/img/classes/crossfit.jpg",
-      description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-      Commodi quae cum quam in voluptate? Magni.`
+      name: '1 on 1 training',
+      img: "/assets/photos/shirley_posture.jpg",
+      description: `Certified kinesiology and personal training in person or virtually.`
     },
   ]
 

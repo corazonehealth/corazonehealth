@@ -2,106 +2,101 @@ import { FaCheck } from "react-icons/fa";
 import { MdClose } from "react-icons/md";
 
 const membershipData = [
+    // {
+    //     title: "1 on 1 training",
+    //     price: 'Click Buy Now to see details',
+    //     benefits: [
+    //         {
+    //             icon: FaCheck,
+    //             text: "In person or virtual training",
+    //         },
+    //         {
+    //             icon: FaCheck,
+    //             text: "ICBC Active Rehab with valid claim #",
+    //         },
+    //         {
+    //             icon: FaCheck,
+    //             text: "Workers Compensation claims",
+    //         },            
+            
+    //     ]
+    // },
     {
-        title: "Standart",
-        price: '30',
+        title: "Standard Membership",
+        price: '$40 + tax/month',
         benefits: [
             {
                 icon: FaCheck,
-                text: "Includes membership",
+                text: "Once a week virtual exercise class",
             },
             {
                 icon: FaCheck,
-                text: "Access to all gym facilities",
-            },
-            {
-                icon: MdClose,
-                text: "Diet plan included",
-            },            
+                text: "Access to over 50 workout videos",
+            },       
             {
                 icon: FaCheck,
-                text: "Health and fitness tips",
-            },
-            {
-                icon: MdClose,
-                text: "Monday-Friday gym access",
+                text: "Be a part of the Cora Zone Community",
             },
             {
                 icon: FaCheck,
-                text: "Full access to everything",
+                text: "Weekly virtual education class",
             },
-            {
-                icon: MdClose,
-                text: "No additional amenities",
-            },
+
         ]
     },
     {
-        title: "Ultimate",
-        price: '45',
-        benefits: [
+        title: "Gold Membership",
+        price: '$80 + tax/month',
+        benefits:  [
             {
                 icon: FaCheck,
-                text: "Includes membership",
+                text: "Once a week virtual exercise class",
             },
             {
                 icon: FaCheck,
-                text: "Access to all gym facilities",
+                text: "Access to over 50 workout videos",
+            },       
+            {
+                icon: FaCheck,
+                text: "Be a part of the Cora Zone Community",
             },
             {
                 icon: FaCheck,
-                text: "Diet plan included",
+                text: "Weekly virtual education class",
             },            
             {
                 icon: FaCheck,
-                text: "Health and fitness tips",
+                text: "Weekly check-ins; goal reviews ",
+            },       
+            {
+                icon: FaCheck,
+                text: "Updated blood pressure* and medication log ",
             },
             {
                 icon: FaCheck,
-                text: "Monday-Friday gym access",
+                text: "Assistance in navigating the health care system",
             },
-            {
-                icon: FaCheck,
-                text: "Full access to everything",
-            },
-            {
-                icon: MdClose,
-                text: "No additional amenities",
-            },
+
+
         ]
     },
     {
-        title: "Professional",
-        price: '60',
+        title: "1 on 1 training",
+        price: 'Click Buy Now to see details',
         benefits: [
             {
                 icon: FaCheck,
-                text: "Includes membership",
+                text: "In person or virtual training",
             },
             {
                 icon: FaCheck,
-                text: "Access to all gym facilities",
+                text: "ICBC Active Rehab with valid claim #",
             },
             {
                 icon: FaCheck,
-                text: "Diet plan included",
+                text: "Workers Compensation claims",
             },            
-            {
-                icon: FaCheck,
-                text: "Health and fitness tips",
-            },
-            {
-                icon: FaCheck,
-                text: "Monday-Friday gym access",
-            },
-            {
-                icon: FaCheck,
-                text: "Full access to everything",
-            },
-            {
-                icon: FaCheck,
-                text: "No additional amenities",
-            },
+            
         ]
     },
 ]

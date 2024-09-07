@@ -4,11 +4,9 @@ import Image from "next/image"
 import Link from "next/link"
 
 import {
-  FaMapMarkedAlt,
   FaEnvelope,
-  FaPhoneAlt,
   FaFacebook,
-  FaTwitter,
+  FaInstagram,
   FaYoutube
 } from 'react-icons/fa'
 
@@ -45,7 +43,7 @@ const footerItem = {
 
 const Footer = () => {
   return (
-    <footer className='bg-primary-300 pt-24'>
+    <footer className='bg-primary-200 pt-24'>
       <div className="container mx-auto pb-24">
         <motion.div
           variants={footerContainerVariant}
@@ -61,13 +59,13 @@ const Footer = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex flex-col gap-4">
             <Link href='#'>
-              <Image src={'/assets/img/logo.png'} width={117} height={55} alt="logo" />
+              <Image src={'/assets/logo2.jpg'} width={200} height={200} alt="logo" />
             </Link>
             <p className="max-w-sm">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, culpa.
             </p>
             <ul className="flex flex-col gap-4">
-              <li className="flex items-center gap-4">
+              {/* <li className="flex items-center gap-4">
                 <FaMapMarkedAlt className="text-xl text-accent" />
                 <span>
                   Lincoln Park Chicago, Illinois
@@ -78,11 +76,12 @@ const Footer = () => {
                 <span>
                   (510) 710-3464 (510) 640-6326
                 </span>
-              </li>
+              </li> */}
               <li className="">
                 <Link className='flex items-center gap-4' href="#">
                   <span>
-                    sayhello@seyhello.com
+
+                    info@corazonehealth.com
                   </span>
                 </Link>
                 <FaEnvelope className="text-xl text-accent" />
@@ -96,7 +95,7 @@ const Footer = () => {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             className=""
-            >
+          >
             <h4 className="h4 text-accent mb-4">
               Recenet Blog posts
 
@@ -130,63 +129,42 @@ const Footer = () => {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             className=""
-            >
+          >
             <h4 className="h4 text-accent mb-4">
               Gallery
             </h4>
             {/*Gallery Images */}
             <div className="flex flex-wrap gap-2">
               <Link href='#'>
-                <Image src={'/assets/img/trainers/david.jpg'}
+                <Image src={'/assets/photos/scadrun.jpg'}
                   width={100}
                   height={100}
                   alt="gallery"
                 />
               </Link>
               <Link href='#'>
-                <Image src={'/assets/img/trainers/matt.jpg'}
+                <Image src={'/assets/photos/hh_champy.jpg'}
                   width={100}
                   height={100}
                   alt="gallery"
                 />
               </Link>
               <Link href='#'>
-                <Image src={'/assets/img/trainers/rosy.jpg'}
+                <Image src={'/assets/photos/hh_ss_kenzie.jpg'}
                   width={100}
                   height={100}
                   alt="gallery"
                 />
               </Link>
-              <Link href='#'>
-                <Image src={'/assets/img/trainers/sofias.jpg'}
+              {/* <Link href='#'>
+                <Image src={'/assets/photos/kp_evaluation.png'}
                   width={100}
                   height={100}
                   alt="gallery"
                 />
-              </Link>
+              </Link> */}
               <Link href='#'>
-                <Image src={'/assets/img/trainers/david.jpg'}
-                  width={100}
-                  height={100}
-                  alt="gallery"
-                />
-              </Link>
-              <Link href='#'>
-                <Image src={'/assets/img/trainers/matt.jpg'}
-                  width={100}
-                  height={100}
-                  alt="gallery"
-                />
-              </Link>
-              <Link href='#'>
-                <Image src={'/assets/img/trainers/rosy.jpg'}
-                  width={100}
-                  height={100}
-                  alt="gallery"
-                />
-              </Link>
-              <Link href='#'>
-                <Image src={'/assets/img/trainers/sofias.jpg'}
+                <Image src={'/assets/photos/treadmill_training.jpg'}
                   width={100}
                   height={100}
                   alt="gallery"
@@ -225,17 +203,17 @@ const Footer = () => {
             <span>&Copyright 2024 Kevin App</span>
             <ul className="flex gap-4 text-xl">
               <li>
-                <Link href='#' className="text-white hover:text-accent transition-all">
+                <Link href='https://www.facebook.com/profile.php?id=61561630227570' className="text-white hover:text-accent transition-all">
                   <FaFacebook />
                 </Link>
               </li>
               <li>
-                <Link href='#' className="text-white hover:text-accent transition-all">
-                  <FaTwitter />
+                <Link href='https://www.instagram.com/corazonehealth1' className="text-white hover:text-accent transition-all">
+                  <FaInstagram />
                 </Link>
               </li>
               <li>
-                <Link href='#' className="text-white hover:text-accent transition-all">
+                <Link href='https://www.youtube.com/@corazonehealth' className="text-white hover:text-accent transition-all">
                   <FaYoutube />
                 </Link>
               </li>

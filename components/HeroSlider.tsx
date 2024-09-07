@@ -36,8 +36,8 @@ const HeroSlider = () => {
               initial="hidden"
               whileInView={'show'}
               viewport={{ once: false, amount: 0.2 }}
-              className="text-white italic text-center lg:text-left mb-4">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni minus aliquid quam!
+              className="text-white italic text-center h5 lg:text-left mb-4">
+              Cardiac and cancer rehabilitation. Diabetes and all metabolic conditions are welcome
             </motion.p>
             <CustomButton
               text="Get Started"

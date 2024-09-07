@@ -42,31 +42,31 @@ export const MembershipSlider = () => {
       {membershipData.map((item, index) => {
         return <SwiperSlide key={index}>
           <div className="border border-accent hover:bg-primary-300/80
-          transition-all duration-300 w-full max-w-sm xl:max-w-none mx-auto">
+          transition-all duration-300 w-full max-w-sm xl:max-w-none mx-auto h-full flex flex-col">
             <div className="py-5 px-[60px] border-b border-accent">
               <h4 className="h4">{item.title}</h4>
             </div>
             {/*benefits */}
-            <div className="py-[30px] px-[60px]">
+            <div className="flex-grow py-[30px] px-[40px]">
               <ul className="flex flex-col gap-5 mb-7">
-                {item.benefits.map((item, index) => {
+                {item.benefits.map((benefit, index) => {
                   return (
                     <li
                       className="flex items-center gap-2"
                       key={index}>
-                      <item.icon className="text-accent text-lg" />
-                      {item.text}
+                      <benefit.icon className="text-accent text-lg" />
+                      {benefit.text}
                     </li>
                   )
                 })}
               </ul>
               {/*Prices & button */}
-              <p className="text-accent mb-8 flex gap-1 items-center">
-                <sup className="text-4xl">$</sup>
-                <strong className="text-6xl">{item.price}</strong>
-                <em className="self-end text-2xl">/month</em>
-              </p>
-              <CustomButton containerStyles="w-[196px] h-[62px]" text="Buy now"/>
+              <div className="mt-auto">
+                <p className="text-accent mb-8 flex gap-1 items-center">
+                  <strong className="text-2xl">{item.price}</strong>
+                </p>
+                <CustomButton containerStyles="w-[196px] h-[62px]" text="Buy now" />
+              </div>
             </div>
           </div>
         </SwiperSlide>

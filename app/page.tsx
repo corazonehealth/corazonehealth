@@ -13,13 +13,13 @@ export default function Home() {
   return (
     <main>
       <Hero/>
-      <About/>
+      {/* <About/> */}
       <Classes/>
       <Team/>
       <Membership/>
-      <Testimonial/>
-      <Blog/>
-      <Contact/>
+      {/* <Testimonial/> */}
+      {/* <Blog/> */}
+      {/* <Contact/> */}
       {/*temporary div */}
     </main>
   );

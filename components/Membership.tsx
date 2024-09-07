@@ -22,7 +22,7 @@ const Membership = () => {
           initial="hidden"
           whileInView={'show'}
           viewport={{ once: false, amount: 0.2 }}
-          className="h2 text-white text-center mb-8">Membership
+          className="h2 text-white text-center mb-8">Prices
         </motion.h2>
         <motion.div
             variants={fadeIn('up', 0.6)}
