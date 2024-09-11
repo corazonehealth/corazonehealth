@@ -1,11 +1,12 @@
-import CardDetails from "@/components/CardDetails"
+import React, { Suspense } from 'react';
+import CardDetails from '@/components/CardDetails';
 
 const CardDetailsPage = () => {
   return (
-    <div>
-        <CardDetails/>
-    </div>
-  )
-}
+    <Suspense fallback={<div>Loading...</div>}>
+      <CardDetails />
+    </Suspense>
+  );
+};
 
-export default CardDetailsPage
+export default CardDetailsPage;
