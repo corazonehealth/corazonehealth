@@ -29,7 +29,7 @@ const Header = () => {
       fixed max-w-[1920px] top-0 w-full bg-primary-200 h-[133px] transition-all z-50`}>
     <div className='container mx-auto flex items-center justify-between' >
       {/* logo */}
-      <Link href=''>
+      <Link href='/'>
         <Image className='mt-2' src={'/assets/logo.jpg'} width={150} height={150} alt='logo'/>
       </Link>
       {/* mobile nav - hidden on large devices */}

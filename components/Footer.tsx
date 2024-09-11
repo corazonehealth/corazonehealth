@@ -58,7 +58,7 @@ const Footer = () => {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             className="flex flex-col gap-4">
-            <Link href='#'>
+            <Link href='/'>
               <Image src={'/assets/logo.jpg'} width={200} height={200} alt="logo" />
             </Link>
             <p className="max-w-sm">
