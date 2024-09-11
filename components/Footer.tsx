@@ -59,7 +59,7 @@ const Footer = () => {
             viewport={{ once: false, amount: 0.3 }}
             className="flex flex-col gap-4">
             <Link href='#'>
-              <Image src={'/assets/logo2.jpg'} width={200} height={200} alt="logo" />
+              <Image src={'/assets/logo.jpg'} width={200} height={200} alt="logo" />
             </Link>
             <p className="max-w-sm">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, culpa.

@@ -1,8 +1,5 @@
 "use client"
 
-import Image from "next/image"
-import { MdClose } from "react-icons/md"
-import { FaCheck } from "react-icons/fa6"
 import CustomButton from "./CustomButton"
 
 //import swiper components
@@ -17,6 +14,7 @@ import 'swiper/css/pagination'
 
 //import membershipData
 import membershipData from "@/constants/membershipData"
+import BuyNowButton from "./BuyNowButton"
 
 export const MembershipSlider = () => {
   return (
@@ -65,7 +63,7 @@ export const MembershipSlider = () => {
                 <p className="text-accent mb-8 flex gap-1 items-center">
                   <strong className="text-2xl">{item.price}</strong>
                 </p>
-                <CustomButton containerStyles="w-[196px] h-[62px]" text="Buy now" />
+                <BuyNowButton containerStyles="w-[196px] h-[62px]" text="Buy now" href="/card-details"/>
               </div>
             </div>
           </div>

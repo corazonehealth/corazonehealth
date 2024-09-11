@@ -40,6 +40,7 @@ const HeroSlider = () => {
               Cardiac and cancer rehabilitation. Diabetes and all metabolic conditions are welcome
             </motion.p>
             <CustomButton
+            onClick={() => document.getElementById('prices')?.scrollIntoView({ behavior: 'smooth'})}
               text="Get Started"
               containerStyles="w-[196px] h-[62px] mb-4" // Added margin-bottom to create space between button and navigation buttons
             />
