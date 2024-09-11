@@ -1,6 +1,8 @@
 "use client"
 
 import { useState } from 'react';
+import { useSearchParams } from 'next/navigation';
+
 
 const CardDetails = () => {
   const [cardDetails, setCardDetails] = useState({
@@ -9,6 +11,10 @@ const CardDetails = () => {
     expiryDate: '',
     cvv: '',
   });
+
+  const searchParams = useSearchParams()
+  const packageTitle = searchParams.get('title')
+  const packagePrice = searchParams.get('price')
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setCardDetails({ ...cardDetails, [e.target.name]: e.target.value });
@@ -22,6 +28,13 @@ const CardDetails = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white p-10 rounded-lg shadow-lg w-full max-w-md">
+        {packageTitle && packagePrice && (
+          <div className='mb-8 text-center'>
+            <h2 className='text-xl font-bold'>You are purchasing:</h2>
+            <p className='text-xl'>{packageTitle}</p>
+            <p className='text-xl'>{packagePrice}</p>
+          </div>
+        )}
         <h2 className="text-2xl font-bold mb-8 text-center">Enter Card Details</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-6">

@@ -1,13 +1,28 @@
 import {motion} from "framer-motion"
 import { fadeIn } from "@/lib/variants"
 import { useRouter } from "next/navigation"
+import React from "react";
 
+interface BuyNowButtonProps {
+    text: string;
+    containerStyles: string;
+    href?: string;
+    packageTitle?: string;
+    packagePrice?: string
+}
 
-const BuyNowButton = ({text, containerStyles, href} : {text: string, containerStyles: string, href?: string }) => {
+const BuyNowButton: React.FC<BuyNowButtonProps> = ({text, containerStyles, href, packageTitle, packagePrice}) => {
     const router = useRouter()
     const handleClick = () =>{
         if(href){
-            router.push(href)
+            //Construct the query string
+            const queryString = new URLSearchParams({
+                title: packageTitle || '',
+                price: packagePrice || '',
+            }).toString()
+
+            //Navigate to the href with the query string
+            router.push(`${href}?${queryString}`)
         }
     }
 

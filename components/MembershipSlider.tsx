@@ -63,7 +63,13 @@ export const MembershipSlider = () => {
                 <p className="text-accent mb-8 flex gap-1 items-center">
                   <strong className="text-2xl">{item.price}</strong>
                 </p>
-                <BuyNowButton containerStyles="w-[196px] h-[62px]" text="Buy now" href="/card-details"/>
+                <BuyNowButton
+                  containerStyles="w-[196px] h-[62px]"
+                  text="Buy now"
+                  href="/card-details"
+                  packageTitle={item.title}
+                  packagePrice={item.price}
+                />
               </div>
             </div>
           </div>
