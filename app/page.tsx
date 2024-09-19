@@ -25,6 +25,9 @@ export default function Home() {
         <Membership />
       </section>
       {/* Other sections */}
+      <section id="blog">
+        <Blog/>
+      </section>
     </main>
   );
 }
