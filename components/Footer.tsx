@@ -102,23 +102,9 @@ const Footer = () => {
             </h4>
             {/*post */}
             <div className="border-b border-dotted border-gray-400 flex flex-col gap-3 pb-3 mb-4">
-              <Link href='#' className="hover:text-accent transition-all">
-                <h5 className="h5 leading-snug">How to stay motivated for all exercises</h5>
-                <p className="text-gray-400 text-[12px] tracking-[3px] uppercase">September 22, 2024</p>
-              </Link>
-            </div>
-            {/*post*/}
-            <div className="border-b border-dotted border-gray-400 flex flex-col gap-3 pb-3 mb-4">
-              <Link href='#' className="hover:text-accent transition-all">
-                <h5 className="h5 leading-snug">How to stay motivated for all exercises</h5>
-                <p className="text-gray-400 text-[12px] tracking-[3px] uppercase">September 22, 2024</p>
-              </Link>
-            </div>
-            {/*post*/}
-            <div className="flex flex-col gap-3 pb-3 mb-4">
-              <Link href='#' className="hover:text-accent transition-all">
-                <h5 className="h5 leading-snug">How to stay motivated for all exercises</h5>
-                <p className="text-gray-400 text-[12px] tracking-[3px] uppercase">September 22, 2024</p>
+              <Link href='/blog/september19' className="hover:text-accent transition-all">
+                <h5 className="h5 leading-snug">How stretching can improve your heart and increase your life.</h5>
+                <p className="text-gray-400 text-[12px] tracking-[3px] uppercase">September 19, 2024</p>
               </Link>
             </div>
           </motion.div>
@@ -156,13 +142,6 @@ const Footer = () => {
                   alt="gallery"
                 />
               </Link>
-              {/* <Link href='#'>
-                <Image src={'/assets/photos/kp_evaluation.png'}
-                  width={100}
-                  height={100}
-                  alt="gallery"
-                />
-              </Link> */}
               <Link href='#'>
                 <Image src={'/assets/photos/treadmill_training.jpg'}
                   width={100}
@@ -173,7 +152,7 @@ const Footer = () => {
             </div>
           </motion.div>
           {/*newsletter*/}
-          <motion.div
+          {/* <motion.div
             variants={footerItem}
             initial="hidden"
             whileInView={"show"}
@@ -193,7 +172,7 @@ const Footer = () => {
                 <CustomButton containerStyles="h-[50px] px-8 " text="Send" />
               </form>
             </div>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
       </div>
       {/*copyright */}
