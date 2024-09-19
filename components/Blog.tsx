@@ -31,7 +31,7 @@ const Blog = () => {
           whileInView={'show'}
           viewport={{ once: false, amount: 0.2 }}
         >
-          <Swiper
+          {/* <Swiper
             slidesPerView={1}
             spaceBetween={30}
             breakpoints={{
@@ -47,10 +47,11 @@ const Blog = () => {
               }
             }}
             className="h-[420px] md:max-w-[660px] lg:max-w-none mb-8"
-          >
+          > */}
             {blogData.map((post, index) => {
-              return (<SwiperSlide key={index}>
-                <div className="flex flex-col justify-center h-full max-w-[320px] mx-auto">
+              return (<div key={index}>
+                {/* <SwiperSlide > */}
+                <div  className="flex flex-col justify-center h-full max-w-[320px] mx-auto">
                   <Image
                     src={post.img}
                     width={320}
@@ -69,16 +70,17 @@ const Blog = () => {
                     </Link>
                   </div>
                 </div>
-              </SwiperSlide>
+              {/* </SwiperSlide> */}
+              </div>
               )
             })}
-            <SwiperNavButtons containerStyles="absolute left-0 right-0 bottom-[16rem]
+            {/* <SwiperNavButtons containerStyles="absolute left-0 right-0 bottom-[16rem]
             w-full max-w-[370px] sm:max-w-[620px] md:max-w-[960px] xl:max-w-[1320px]
             mx-auto z-50 flex justify-between gap-1"
               btnStyles="bg-accent text-white w-[56px] h-[56px] flex justify-center
             items-center hover:bg-accent transition-all duration-300"
-              iconStyles="text-2xl" />
-          </Swiper>
+              iconStyles="text-2xl" /> */}
+          {/* </Swiper> */}
         </motion.div>
         <motion.div
           variants={fadeIn("up", 0.8)}
@@ -86,7 +88,7 @@ const Blog = () => {
           whileInView={'show'}
           viewport={{ once: false, amount: 0.2 }}
         >
-          <CustomButton containerStyles="block w-[196px] h-[62px] mx-auto" text="View All" />
+          {/* <CustomButton containerStyles="block w-[196px] h-[62px] mx-auto" text="View All" /> */}
         </motion.div>
       </motion.div>
     </section>
