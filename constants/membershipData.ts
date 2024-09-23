@@ -22,7 +22,7 @@ const membershipData = [
     //     ]
     // },
     {
-        title: "Standard Membership",
+        title: "Gold Membership",
         price: '$40 + tax/month',
         benefits: [
             {
@@ -45,7 +45,7 @@ const membershipData = [
         ]
     },
     {
-        title: "Gold Membership",
+        title: "Diamond Membership",
         price: '$80 + tax/month',
         benefits:  [
             {
@@ -81,7 +81,7 @@ const membershipData = [
         ]
     },
     {
-        title: "1 on 1 training",
+        title: "Individualized Training",
         price: 'Click Buy Now to see details',
         benefits: [
             {
