@@ -1,29 +1,40 @@
-"use client"
-import React, { useEffect, useState } from 'react'
-import Navbar from './Navbar'
-import MobileNav from './MobileNav'
-import Link from 'next/link'
-import Image from 'next/image'
-import { MdMenu } from 'react-icons/md'
+"use client";
+
+import React, { useEffect, useState } from 'react';
+import Navbar from './Navbar';
+import MobileNav from './MobileNav';
+import Link from 'next/link';
+import Image from 'next/image';
+import { MdMenu } from 'react-icons/md';
+import { SignedIn, SignedOut, UserButton, SignInButton, useAuth } from '@clerk/nextjs';
 
 const Header = () => {
-  const [headerActive, setHeaderActive] = useState(false)
-  const [openNav, setOpenNav] = useState(false)
+  const [headerActive, setHeaderActive] = useState(false);
+  const [openNav, setOpenNav] = useState(false);
+  const { isLoaded, isSignedIn } = useAuth();
 
-  useEffect(() =>{
-    const handleScroll = ()=>{
-      //detect scroll
-      setHeaderActive(window.scrollY > 50)
-    }
+  useEffect(() => {
+    const handleScroll = () => {
+      setHeaderActive(window.scrollY > 50);
+    };
 
-    //add scroll event
-    window.addEventListener('scroll', handleScroll)
-    //clear scroll event
-    return ()=>{
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
-  
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  if (!isLoaded) {
+    return (
+      <header className="fixed max-w-[1920px] top-0 w-full bg-primary-200 transition-all z-50 h-[140px]">
+        <div className='container mx-auto flex items-center justify-between h-full'>
+          {/* Placeholder for logo */}
+          <div className="animate-pulse h-10 w-40 bg-gray-300" />
+        </div>
+      </header>
+    );
+  }
+
   return (
     <header className={` ${headerActive ? 'h-[100px]' : 'h-[140px]'} 
       fixed max-w-[1920px] top-0 w-full bg-primary-200 h-[133px] transition-all z-50`}>
@@ -41,20 +52,29 @@ const Header = () => {
         font-medium text-white transition-all xl:hidden`}/>
       {/* desktop nav - hiiden on small devices */}
       <Navbar containerStyles='flex gap-4 text-white text-base uppercase font-medium transition-all hidden xl:flex'/>
-      {/* hide/open menu button */}
-      <div className='flex items-center gap-4'>
-        {/**Login & register buttons */}
-        <div className='text-white flex items-center gap-4'>
-          <button className='hover:text-accent transition-all text-base uppercase font-medium'>Login</button>
-          <button className='hover:text-accent transition-all text-base uppercase font-medium'>Register</button>
+
+        {/* User Buttons */}
+        <div className='flex items-center gap-4 text-white text-base uppercase font-medium'>
+          {isSignedIn ? (
+            <div>
+            <SignedIn>
+              <UserButton />
+            </SignedIn>
+            </div>
+          ) : (
+            <div>
+            <SignedOut>
+              <SignInButton />
+            </SignedOut>
+            </div>
+          )}
+          <button onClick={() => setOpenNav(!openNav)} className='text-white xl:hidden'>
+            <MdMenu className='text-4xl' />
+          </button>
         </div>
-        <button onClick={()=>setOpenNav(!openNav)} className='text-white xl:hidden'>
-          <MdMenu className='text-4xl'/>
-        </button>
       </div>
-    </div>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;
