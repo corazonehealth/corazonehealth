@@ -30,4 +30,6 @@ const BlogList = () => {
   );
 };
 
+export const runtime = 'edge';
+
 export default BlogList;

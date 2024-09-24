@@ -10,4 +10,6 @@ const CardDetailsPage = () => {
   );
 };
 
+export const runtime = 'edge';
+
 export default CardDetailsPage;
