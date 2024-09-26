@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import About from "@/components/About";
 import Blog from "@/components/Blog";
 import Classes from "@/components/Classes";
