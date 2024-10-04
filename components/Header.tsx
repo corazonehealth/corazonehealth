@@ -46,12 +46,15 @@ const Header = () => {
           <Image className='mt-2' src={'/assets/logo.jpg'} width={150} height={150} alt='logo'/>
         </Link>
 
-        <MobileNav containerStyles={`${headerActive ? 'top-[124px]' : 'top-[124px]'} 
+        <MobileNav 
+          containerStyles={`${headerActive ? 'top-[124px]' : 'top-[124px]'} 
           ${openNav ? "max-h-max pt-8 pb-10 border-t border-white/10" :
              "max-h-0 pt-0 pb-0 overflow-hidden border-white/0"}
           flex flex-col text-center gap-8 
           fixed bg-primary-200 w-full left-0 text-base uppercase
-          font-medium text-white transition-all xl:hidden`}/>
+          font-medium text-white transition-all xl:hidden`}
+          setOpenNav={setOpenNav} // Pass setOpenNav as a prop
+        />
 
         <Navbar containerStyles='flex gap-4 text-white text-base uppercase font-medium transition-all hidden xl:flex'/>
 
