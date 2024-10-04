@@ -1,4 +1,3 @@
-export const runtime = 'edge';
 import About from "@/components/About";
 import Blog from "@/components/Blog";
 import Classes from "@/components/Classes";
@@ -9,6 +8,8 @@ import Team from "@/components/Team";
 import Testimonial from "@/components/Testimonial";
 import Image from "next/image";
 import Link from "next/link";
+
+// export const runtime = 'edge';
 
 export default function Home() {
   return (

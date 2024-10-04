@@ -8,17 +8,19 @@ interface BuyNowButtonProps {
     containerStyles: string;
     href?: string;
     packageTitle?: string;
-    packagePrice?: string
+    monthlyPackage?: string
+    yearlyPackage?: string
 }
 
-const BuyNowButton: React.FC<BuyNowButtonProps> = ({text, containerStyles, href, packageTitle, packagePrice}) => {
+const BuyNowButton: React.FC<BuyNowButtonProps> = ({text, containerStyles, href, packageTitle, monthlyPackage, yearlyPackage}) => {
     const router = useRouter()
     const handleClick = () =>{
         if(href){
             //Construct the query string
             const queryString = new URLSearchParams({
                 title: packageTitle || '',
-                price: packagePrice || '',
+                monthlyPrice: monthlyPackage || '',
+                yearlyPrice: yearlyPackage || '' 
             }).toString()
 
             //Navigate to the href with the query string

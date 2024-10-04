@@ -2,67 +2,59 @@ import { FaCheck } from "react-icons/fa";
 import { MdClose } from "react-icons/md";
 
 const membershipData = [
-    // {
-    //     title: "1 on 1 training",
-    //     price: 'Click Buy Now to see details',
-    //     benefits: [
-    //         {
-    //             icon: FaCheck,
-    //             text: "In person or virtual training",
-    //         },
-    //         {
-    //             icon: FaCheck,
-    //             text: "ICBC Active Rehab with valid claim #",
-    //         },
-    //         {
-    //             icon: FaCheck,
-    //             text: "Workers Compensation claims",
-    //         },            
-            
-    //     ]
-    // },
     {
         title: "Gold Membership",
-        price: '$40 + tax/month',
+        monthlyPrice: '$40/monthly or ',
+        yearlyPrice: '$440/yearly',
         benefits: [
             {
                 icon: FaCheck,
-                text: "Once a week virtual exercise class",
+                text: "30 minute Aerobic classes offered through zoom",
             },
             {
                 icon: FaCheck,
-                text: "Access to over 50 workout videos",
+                text: "To improve endurance and overall fitness",
             },       
             {
                 icon: FaCheck,
-                text: "Be a part of the Cora Zone Community",
+                text: "Different levels so you can work in YOUR zone",
             },
             {
                 icon: FaCheck,
-                text: "Weekly virtual education class",
+                text: "Enhance balance, coordination, and reaction time at home",
             },
+            {
+                icon: FaCheck,
+                text: "Stay after class for Cora Zone Health 15 minute seminars",
+            },
+
 
         ]
     },
     {
         title: "Diamond Membership",
-        price: '$80 + tax/month',
+        monthlyPrice: '$80/monthly or ',
+        yearlyPrice: '$880/yearly',
         benefits:  [
             {
                 icon: FaCheck,
-                text: "Once a week virtual exercise class",
+                text: "All the benefits of the gold membership",
             },
             {
                 icon: FaCheck,
-                text: "Access to over 50 workout videos",
+                text: "Weekly check- ins, through phone or email",
             },       
             {
                 icon: FaCheck,
-                text: "Be a part of the Cora Zone Community",
+                text: "Individualized goals and programs for fall prevention",
             },
             {
                 icon: FaCheck,
-                text: "Weekly virtual education class",
+                text: "Handling metabolic conditions, neuromuscular diagnosis",
+            },
+            {
+                icon: FaCheck,
+                text: "We help you track health markers for your next appointment",
             },            
             {
                 icon: FaCheck,
@@ -70,12 +62,12 @@ const membershipData = [
             },       
             {
                 icon: FaCheck,
-                text: "Updated blood pressure* and medication log ",
+                text: "Diamond members can access exercise and health consultations anytime",
             },
-            {
-                icon: FaCheck,
-                text: "Assistance in navigating the health care system",
-            },
+            // {
+            //     icon: FaCheck,
+            //     text: "Assistance in navigating the health care system",
+            // },
 
 
         ]

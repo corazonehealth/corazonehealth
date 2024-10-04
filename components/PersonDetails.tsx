@@ -16,7 +16,7 @@ const PersonDetails = () => {
 
   const searchParams = useSearchParams();
   const packageTitle = searchParams.get('title');
-  const packagePrice = searchParams.get('price');
+  const packagePrice = searchParams.get('monthlyPrice' || 'yearlyPrice');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setPersonDetails({ ...personDetails, [e.target.name]: e.target.value });
