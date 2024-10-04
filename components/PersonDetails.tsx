@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 import React, { useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 
@@ -16,7 +15,11 @@ const PersonDetails = () => {
 
   const searchParams = useSearchParams();
   const packageTitle = searchParams.get('title');
-  const packagePrice = searchParams.get('monthlyPrice' || 'yearlyPrice');
+  const monthlyPrice = searchParams.get('monthlyPrice');
+  const yearlyPrice = searchParams.get('yearlyPrice');
+  
+  // Choose packagePrice based on what's available
+  const packagePrice = monthlyPrice ? monthlyPrice : yearlyPrice;
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setPersonDetails({ ...personDetails, [e.target.name]: e.target.value });
