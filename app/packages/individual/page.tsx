@@ -15,7 +15,7 @@ const IndividualPackage = () => {
               Individualized Training
             </h5>
             <p className="text-lg leading-8 mb-6">
-              Whether you're aiming to shed stubborn fat or enhance your performance in your favorite sport,
+            Whether you&apos;re aiming to shed stubborn fat or enhance your performance in your favorite sport,
               our personal training sessions with a highly qualified,
               certified trainer can help you achieve your goals safely and efficiently—no matter the condition or injury.
             </p>

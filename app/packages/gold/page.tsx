@@ -21,8 +21,7 @@ const Page = () => {
             </p>
             <p className="text-lg leading-8 mb-6">
               Stay after class for exclusive 15-minute seminars by Cora Zone Health,
-              covering topics like managing angina, controlling blood pressure, understanding the heart's electrical system,
-              functional training, metabolic conditions, and tips to enhance brain and heart health.
+              covering topics like managing angina, controlling blood pressure, understanding the heart&apos;s electrical system...
             </p>
             {/* Swiper Navigation Buttons */}
             <div className="flex justify-center my-8">

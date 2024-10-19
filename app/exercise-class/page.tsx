@@ -11,7 +11,7 @@ const Page = () => {
     These 30-minute aerobic sessions are designed to improve fitness, build endurance, and enhance coordination and balance.
     </p>
     <p className="text-lg leading-8 mb-6">
-    Whether you're recovering from heart conditions, cancer, orthopedic issues, or managing Parkinson's disease, 
+    Whether you&apos;re recovering from heart conditions, cancer, orthopedic issues, or managing Parkinson&apos;s disease, 
     our classes are tailored to various fitness levels, ensuring you can exercise comfortably in your own zone..
     </p>
     <p className="text-lg leading-8 mb-6">
