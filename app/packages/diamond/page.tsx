@@ -47,10 +47,13 @@ const Page = () => {
               Membership Pricing:
             </h6>
             <ul className="list-disc pl-6 text-lg leading-8 cursor-pointer">
-              <Link href={`https://buy.stripe.com/8wMbKw9Lt1y757q003`}>
+            <Link href={`https://buy.stripe.com/9AQ9CoaPx2CbdDW4gt`}>
+                <li className='hover:text-accent transition-all'>$80 one time pay</li>
+              </Link>
+              <Link href={`https://buy.stripe.com/bIYcOA1eX3GfarK00e`}>
                 <li className='hover:text-accent transition-all'>$80 monthly</li>
               </Link>
-              <Link href={`https://buy.stripe.com/4gw6qc5vdccL0Ra28a`}>
+              <Link href={`https://buy.stripe.com/fZe5m8g9R0u343maET`}>
                 <li className='hover:text-accent transition-all'>$880 yearly <span className="text-secondary-400">(get 1 month free)</span></li>
               </Link>
             </ul>
