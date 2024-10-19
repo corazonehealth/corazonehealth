@@ -48,7 +48,7 @@ const Classes = () => {
                     initial="hidden"
                     whileInView={'show'}
                     viewport={{once: false, amount: 0.2}}>
-                <CustomButton containerStyles="w-[164px] h-[46px]" text="Read more" />
+                <CustomButton containerStyles="w-[164px] h-[46px]" text="Read more" href={item.href}/>
               </motion.div>
             </div>
           </div>
@@ -60,5 +60,5 @@ const Classes = () => {
     </section>
   )
 }
-//2.02..01
+
 export default Classes

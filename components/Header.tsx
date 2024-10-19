@@ -59,7 +59,7 @@ const Header = () => {
         <Navbar containerStyles='flex gap-4 text-white text-base uppercase font-medium transition-all hidden xl:flex'/>
 
         <div className='flex items-center gap-4 text-white text-base uppercase font-medium'>
-          {isClient && isSignedIn ? ( // Ensure this runs only on the client
+          {/* {isClient && isSignedIn ? ( // Ensure this runs only on the client
             <UserButton />
           ) : (
             isClient && (
@@ -69,7 +69,7 @@ const Header = () => {
                 </SignInButton>
               </SignedOut>
             )
-          )}
+          )} */}
           <button onClick={() => setOpenNav(!openNav)} className='text-white xl:hidden'>
             <MdMenu className='text-4xl' />
           </button>

@@ -62,29 +62,14 @@ const Footer = () => {
               <Image src={'/assets/logo.jpg'} width={200} height={200} alt="logo" />
             </Link>
             <p className="max-w-sm">
-            Cardiac, cancer, pulmonary, diabetes, and hip and knee replacements. Get in YOUR zone!
+              Cardiac, cancer, pulmonary, diabetes, and hip and knee replacements. Get in YOUR zone!
             </p>
             <ul className="flex flex-col gap-4">
-              {/* <li className="flex items-center gap-4">
-                <FaMapMarkedAlt className="text-xl text-accent" />
-                <span>
-                  Lincoln Park Chicago, Illinois
-                </span>
-              </li>
               <li className="flex items-center gap-4">
-                <FaPhoneAlt className="text-xl text-accent" />
-                <span>
-                  (510) 710-3464 (510) 640-6326
-                </span>
-              </li> */}
-              <li className="">
-                <Link className='flex items-center gap-4' href="#">
-                  <span>
-
-                    info@corazonehealth.com
-                  </span>
-                </Link>
                 <FaEnvelope className="text-xl text-accent" />
+                <Link href="#" className="text-white">
+                  info@corazonehealth.com
+                </Link>
               </li>
             </ul>
           </motion.div>

@@ -9,7 +9,7 @@ import CustomButton from "./CustomButton"
 import SwiperNavButtons from "./SwiperNavButtons"
 import { motion } from "framer-motion"
 import { fadeIn } from "@/lib/variants"
-
+import links from "@/constants/links"
 
 const HeroSlider = () => {
   return (
@@ -40,21 +40,21 @@ const HeroSlider = () => {
               Cardiac and cancer rehabilitation. Diabetes and all metabolic conditions are welcome
             </motion.p>
             <CustomButton
-            onClick={() => document.getElementById('prices')?.scrollIntoView({ behavior: 'smooth'})}
+            href='#packages'
               text="Get Started"
               containerStyles="w-[196px] h-[62px] mb-4" // Added margin-bottom to create space between button and navigation buttons
             />
             {/*swiper nav buttons */}
-            <SwiperNavButtons
+            {/* <SwiperNavButtons
               containerStyles="flex justify-center lg:justify-start gap-1 mt-4 mb-4 sm:ml-4 md:ml-5 lg:ml-10 " // Moved inside and added margin-top for spacing
               btnStyles="border border-accent text-white w-[56px] h-[56px] flex justify-center 
                 items-center hover:bg-accent transition-all duration-300"
-              iconStyles="text-2xl"
-            />
+              iconStyles="text-2xl" */}
+            {/* /> */}
           </div>
         </div>
       </SwiperSlide>
-      <SwiperSlide>
+      {/* <SwiperSlide>
         <div className="h-full flex justify-end pt-48">
           <div className="flex flex-col items-center lg:items-start lg:max-w-[700px] ">
             <motion.h1
@@ -84,7 +84,7 @@ const HeroSlider = () => {
               containerStyles="w-[196px] h-[62px] mb-4" // Added margin-bottom to create space between button and navigation buttons
             />
             {/*swiper nav buttons */}
-            <SwiperNavButtons
+            {/* <SwiperNavButtons
               containerStyles="flex justify-center lg:justify-start gap-1 mt-4 mb-4 sm:ml-4 md:ml-5 lg:ml-10 " // Moved inside and added margin-top for spacing
               btnStyles="border border-accent text-white w-[56px] h-[56px] flex justify-center 
                 items-center hover:bg-accent transition-all duration-300"
@@ -92,7 +92,7 @@ const HeroSlider = () => {
             />
           </div>
         </div>
-      </SwiperSlide>
+      </SwiperSlide> */} 
     </Swiper>
   )
 }

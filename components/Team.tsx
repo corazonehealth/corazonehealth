@@ -23,7 +23,7 @@ const Team = () => {
                   initial="hidden"
                   whileInView={'show'}
                   viewport={{ once: false, amount: 0.2 }}
-        className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12 mb-12'>
+        className='flex items-center'>
           {trainerData.map((trainer, index) => {
             return (<div key={index} className='flex flex-col items-center text-center'>
               {/*image */}
@@ -57,7 +57,7 @@ const Team = () => {
                   // whileInView={'show'}
                   // viewport={{ once: false, amount: 0.2 }}
                   >
-          <CustomButton containerStyles='w-[196px] h-[62px]' text='See all trainers' />
+          {/* <CustomButton containerStyles='w-[196px] h-[62px]' text='See all trainers' /> */}
         </div>
       </div>
     </section>

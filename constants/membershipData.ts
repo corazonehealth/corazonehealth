@@ -1,11 +1,12 @@
 import { FaCheck } from "react-icons/fa";
-import { MdClose } from "react-icons/md";
+
 
 const membershipData = [
     {
         title: "Gold Membership",
-        monthlyPrice: '$40/monthly or ',
+        monthlyPrice: '$40/monthly',
         yearlyPrice: '$440/yearly',
+        href: "/packages/gold",
         benefits: [
             {
                 icon: FaCheck,
@@ -33,8 +34,9 @@ const membershipData = [
     },
     {
         title: "Diamond Membership",
-        monthlyPrice: '$80/monthly or ',
+        monthlyPrice: '$80/monthly',
         yearlyPrice: '$880/yearly',
+        href: "/packages/diamond",
         benefits:  [
             {
                 icon: FaCheck,
@@ -75,6 +77,7 @@ const membershipData = [
     {
         title: "Individualized Training",
         price: 'Click Buy Now to see details',
+        href: "/packages/individual",
         benefits: [
             {
                 icon: FaCheck,

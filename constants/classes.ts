@@ -3,24 +3,28 @@ const classes = [
       name: 'Exercise class',
       img: "/assets/photos/hh_ss_kenzie.jpg",
       description: `30 minutes aerobics to strengthen 
-      the heart, improve balance, and muscular endurance.`
+      the heart, improve balance, and muscular endurance.`,
+      href: '/exercise-class'
     },
     {
       name: 'Post class education sessions',
       img: "/assets/photos/zoom_ppl.jpg",
       description: `Topics range from how to safely exercise,
-       medication use, anatomy and physiology.`
+       medication use, anatomy and physiology.`,
+       href: '/post-education'
     },
     {
       name: 'Case managing',
       img: "/assets/photos/pool.jpg",
       description: `Guidance in contacting your health professional, 
-      logging of vitals, and weekly health check-ins.`
+      logging of vitals, and weekly health check-ins.`,
+      href: '/case-managing'
     },
     {
       name: '1 on 1 training',
       img: "/assets/photos/shirley_posture.jpg",
-      description: `Certified kinesiology and personal training in person or virtually.`
+      description: `Certified kinesiology and personal training in person or virtually.`,
+      href: '/individual-trainer'
     },
   ]
 

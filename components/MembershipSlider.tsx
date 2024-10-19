@@ -1,3 +1,4 @@
+
 "use client"
 
 import CustomButton from "./CustomButton"
@@ -14,7 +15,7 @@ import 'swiper/css/pagination'
 
 // import membershipData
 import membershipData from "@/constants/membershipData"
-import BuyNowButton from "./BuyNowButton"
+
 
 export const MembershipSlider = () => {
   return (
@@ -56,25 +57,16 @@ export const MembershipSlider = () => {
                   })}
                 </ul>
                 {/* Prices */}
-                <p className="text-accent mb-8 flex gap-1 items-center">
+                {/* <p className="text-accent mb-8 flex gap-1 items-center">
                   <strong className="text-2xl">{item.monthlyPrice}</strong>
                   <strong className="text-2xl">{item.yearlyPrice}</strong>
-                </p>
+                </p> */}
                 {/* Buttons */}
                 <div className="flex gap-4 mt-4"> {/* Adding margin for spacing */}
-                  <BuyNowButton
-                    containerStyles="w-[140px] h-[40px] text-sm" // Smaller size
-                    text="Monthly"
-                    href="/card-details"
-                    packageTitle={item.title}
-                    monthlyPackage={item.monthlyPrice}
-                  />
-                  <BuyNowButton
-                    containerStyles="w-[140px] h-[40px] text-sm" // Smaller size
-                    text="Yearly"
-                    href="/card-details"
-                    packageTitle={item.title}
-                    monthlyPackage={item.yearlyPrice}
+                  <CustomButton
+                    containerStyles="w-[140px] h-[40px] text-sm"
+                    text="Read More"
+                    href={item.href}
                   />
                 </div>
               </div>

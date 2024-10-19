@@ -1,23 +1,36 @@
-'use client'
+"use client";
 
-import { useSwiper } from "swiper/react";
-import { PiCaretLeftBold, PiCaretRightBold } from "react-icons/pi";
+import { useRouter } from "next/navigation"; // Import useRouter for navigation
+import { FC } from 'react';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
-const SwiperNavButtons = (
-    { containerStyles, btnStyles, iconStyles }:
-    { containerStyles: string; btnStyles: string; iconStyles: string }
-) => {
-    const swiper = useSwiper()
-    return (
-        <div className={`${containerStyles}`}>
-            <button className={`${btnStyles}`} onClick={()=> swiper.slidePrev()}>
-                <PiCaretLeftBold className={`${iconStyles}`}/>
-            </button>
-            <button className={`${btnStyles}`} onClick={()=> swiper.slideNext()}>
-                <PiCaretRightBold className={`${iconStyles}`}/>
-            </button>
-        </div>
-    )
+interface SwiperNavButtonsProps {
+  containerStyles: string;
+  btnStyles: string;
+  iconStyles: string;
+  leftPath: string;   // Prop for the path to navigate on left arrow click
+  rightPath: string;  // Prop for the path to navigate on right arrow click
 }
 
-export default SwiperNavButtons
+const SwiperNavButtons: FC<SwiperNavButtonsProps> = ({
+  containerStyles,
+  btnStyles,
+  iconStyles,
+  leftPath,
+  rightPath
+}) => {
+  const router = useRouter(); // Now we use useRouter for navigation
+
+  return (
+    <div className={containerStyles}>
+      <button onClick={() => router.push(leftPath)} className={btnStyles}>
+        <FaArrowLeft className={iconStyles} />
+      </button>
+      <button onClick={() => router.push(rightPath)} className={btnStyles}>
+        <FaArrowRight className={iconStyles} />
+      </button>
+    </div>
+  );
+};
+
+export default SwiperNavButtons;
