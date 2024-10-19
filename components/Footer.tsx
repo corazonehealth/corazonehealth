@@ -62,7 +62,7 @@ const Footer = () => {
               <Image src={'/assets/logo.jpg'} width={200} height={200} alt="logo" />
             </Link>
             <p className="max-w-sm">
-              Cardiac, cancer, pulmonary, diabetes, and hip and knee replacements. Get in YOUR zone!
+            Cardiac, Cancer, Pulmonary, Diabetes, Parkinsons and Hip and Knee replacements. Get in YOUR zone!
             </p>
             <ul className="flex flex-col gap-4">
               <li className="flex items-center gap-4">
