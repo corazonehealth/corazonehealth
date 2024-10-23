@@ -33,8 +33,10 @@ const Page = () => {
                 rightPath="/packages/diamond" // Path to Individual package
               />
             </div>
-            <h6 className="text-2xl font-bold text-center mt-11 mb-8 leading-snug">
-              Membership Pricing:
+            <h6 className='text-2xl font-bold text-center mt-11 mb-8 leading-snug'>
+              Training Packages:
+              <br/>
+              <span className="text-xs block">(Click bellow)</span>
             </h6>
             <ul className="list-disc pl-6 text-lg leading-8 cursor-pointer ">
             <Link href={`https://buy.stripe.com/6oE01O5vd3GfbvObIY`}>
