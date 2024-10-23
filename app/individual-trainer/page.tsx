@@ -8,7 +8,7 @@ const Page = () => {
     1-on-1 Individualized Training. 
     </h5>
     <p className="text-lg leading-8 mb-6">
-    Whether your goal is to lose weight, build strength, or simply benefit from personalized attention, our 1-on-1 training sessions can help you reach your goals faster. 
+    Whether your goal is to lose weight, build strength,knee/hip replacment, or simply benefit from personalized attention, our 1-on-1 training sessions can help you reach your goals faster. 
     Available online or in-person (location dependent), our trainers are certified kinesiologists and exercise physiologists, ensuring expert guidance at all times. 
     Single and group sessions are available.
     </p>

@@ -62,7 +62,7 @@ const Footer = () => {
               <Image src={'/assets/logo.jpg'} width={200} height={200} alt="logo" />
             </Link>
             <p className="max-w-sm">
-            Cardiac, Cancer, Pulmonary, Diabetes, Parkinsons and Hip and Knee replacements. Get in YOUR zone!
+            Cardiac, Cancer, Pulmonary, Diabetes, Parkinsons and Hip and Knee replacements. First class is free!  Get in YOUR zone!
             </p>
             <ul className="flex flex-col gap-4">
               <li className="flex items-center gap-4">
@@ -90,6 +90,13 @@ const Footer = () => {
               <Link href='/blog/september19' className="hover:text-accent transition-all">
                 <h5 className="h5 leading-snug">How stretching can improve your heart and increase your life.</h5>
                 <p className="text-gray-400 text-[12px] tracking-[3px] uppercase">September 19, 2024</p>
+              </Link>
+
+            </div>            
+            <div className="border-b border-dotted border-gray-400 flex flex-col gap-3 pb-3 mb-4">
+            <Link href='/blog/lifting-weights' className="hover:text-accent transition-all">
+                <h5 className="h5 leading-snug">Lifting weights to lower blood sugar levels.</h5>
+                <p className="text-gray-400 text-[12px] tracking-[3px] uppercase">October 22, 2024</p>
               </Link>
             </div>
           </motion.div>

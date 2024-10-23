@@ -1,3 +1,5 @@
+import SwiperNavButtons from "@/components/SwiperNavButtons";
+
 const Page = () => {
     return (
 <section className="bg-primary-300 text-white py-24 px-4 md:px-8">
@@ -30,6 +32,15 @@ const Page = () => {
       performing short stretches for your hips, shoulders, and ankles can prevent HR and BP from spiking.
       Over time, regular stretching will help improve your quality of life, regardless of your ability to perform intense physical activity.
     </p>
+                {/* Swiper Navigation Buttons */}
+                <div className="flex justify-center my-8">
+              <SwiperNavButtons
+                containerStyles="flex gap-4"
+                btnStyles="border border-accent text-white w-[56px] h-[56px] flex justify-center items-center hover:bg-accent transition-all duration-300"
+                iconStyles="text-2xl"
+                rightPath="/blog/lifting-weights" 
+              />
+            </div>
   </div>
 </section>
 

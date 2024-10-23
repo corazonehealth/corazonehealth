@@ -9,7 +9,7 @@ const Page = () => {
     Case Management Services for Diamond Members.
     Facing limited healthcare options in your area? Need to travel for cardiac or cancer consultations? 
     Our clinicians are here to help you navigate the healthcare system. 
-    Diamond members receive bi-weekly check-ins via phone or email, providing support without the long waitlists..
+    Diamond members receive bi-weekly check-ins via phone or email, providing support without the long waitlists.
     </p>
     <p className="text-lg leading-8 mb-6">
     If you need assistance communicating with adjusters, physicians, or lawyers, our case management services are at your disposal. 

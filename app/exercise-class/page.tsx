@@ -18,6 +18,9 @@ const Page = () => {
     Each class includes marching exercises, dynamic warm-ups, and energizing aerobic routines set to music. 
     Follow along with our expert instructors for a fun and effective workout, helping you achieve your fitness goals in just 30 minutes.
     </p>
+    <p className="text-lg leading-8 mb-6 text-accent">
+    First class is free!
+    </p>
 
   </div>
 </section>

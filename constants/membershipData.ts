@@ -4,8 +4,8 @@ import { FaCheck } from "react-icons/fa";
 const membershipData = [
     {
         title: "Gold Membership",
-        monthlyPrice: '$40/monthly',
-        yearlyPrice: '$440/yearly',
+        monthlyPrice: '$45/monthly',
+        yearlyPrice: '$495/yearly',
         href: "/packages/gold",
         benefits: [
             {
@@ -34,8 +34,8 @@ const membershipData = [
     },
     {
         title: "Diamond Membership",
-        monthlyPrice: '$80/monthly',
-        yearlyPrice: '$880/yearly',
+        monthlyPrice: '$85/monthly',
+        yearlyPrice: '$935/yearly',
         href: "/packages/diamond",
         benefits:  [
             {

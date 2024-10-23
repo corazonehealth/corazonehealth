@@ -31,7 +31,7 @@ const Blog = () => {
           whileInView={'show'}
           viewport={{ once: false, amount: 0.2 }}
         >
-          {/* <Swiper
+          <Swiper
             slidesPerView={1}
             spaceBetween={30}
             breakpoints={{
@@ -39,48 +39,52 @@ const Blog = () => {
                 slidesPerView: 2,
                 spaceBetween: 15,
               },
-              1024: {
-                slidesPerView: 3,
-              },
-              1400: {
-                slidesPerView: 4,
-              }
+              // 1024: {
+              //   slidesPerView: 3,
+              // },
+              // 1400: {
+              //   slidesPerView: 4,
+              // }
             }}
-            className="h-[420px] md:max-w-[660px] lg:max-w-none mb-8"
-          > */}
+            className="h-[420px] md:max-w-[660px] lg:max-w-none mb-8 flex justify-center"
+          >
             {blogData.map((post, index) => {
               return (<div key={index}>
-                {/* <SwiperSlide > */}
-                <div  className="flex flex-col justify-center h-full max-w-[320px] mx-auto">
-                  <Image
-                    src={post.img}
-                    width={320}
-                    height={266}
-                    alt="blog"
-                    className="mb-6" />
-                  <div className="flex flex-col items-start">
-                    <p className="max-w-[380px] uppercase text-[12px] tracking-[3px]
+                <SwiperSlide >
+                  <div className="flex flex-col justify-center h-full max-w-[320px] mx-auto">
+                    <Image
+                      src={post.img}
+                      width={230}
+                      height={150}
+                      alt="blog"
+                      className="mb-6" />
+                    <div className="flex flex-col items-start">
+                      <p className="max-w-[380px] uppercase text-[12px] tracking-[3px]
                     mb-1">
-                      {post.date}
-                    </p>
-                    <Link href={post.href}>
-                      <h5 className="h5">
-                        {post.title}
-                      </h5>
-                    </Link>
+                        {post.date}
+                      </p>
+                      <Link href={post.href}>
+                        <h5 className="h5">
+                          {post.title}
+                        </h5>
+                      </Link>
+                    </div>
                   </div>
-                </div>
-              {/* </SwiperSlide> */}
+                </SwiperSlide>
               </div>
               )
             })}
-            {/* <SwiperNavButtons containerStyles="absolute left-0 right-0 bottom-[16rem]
+            {/* <SwiperNavButtons 
+            containerStyles="absolute left-0 right-0 bottom-[16rem]
             w-full max-w-[370px] sm:max-w-[620px] md:max-w-[960px] xl:max-w-[1320px]
             mx-auto z-50 flex justify-between gap-1"
               btnStyles="bg-accent text-white w-[56px] h-[56px] flex justify-center
             items-center hover:bg-accent transition-all duration-300"
-              iconStyles="text-2xl" /> */}
-          {/* </Swiper> */}
+              iconStyles="text-2xl"
+              leftPath=""
+              rightPath=""
+              /> */}
+          </Swiper>
         </motion.div>
         <motion.div
           variants={fadeIn("up", 0.8)}

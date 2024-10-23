@@ -8,8 +8,8 @@ interface SwiperNavButtonsProps {
   containerStyles: string;
   btnStyles: string;
   iconStyles: string;
-  leftPath: string;   // Prop for the path to navigate on left arrow click
-  rightPath: string;  // Prop for the path to navigate on right arrow click
+  leftPath?: string;   // Make leftPath optional
+  rightPath?: string;  // Make rightPath optional
 }
 
 const SwiperNavButtons: FC<SwiperNavButtonsProps> = ({
@@ -23,12 +23,16 @@ const SwiperNavButtons: FC<SwiperNavButtonsProps> = ({
 
   return (
     <div className={containerStyles}>
-      <button onClick={() => router.push(leftPath)} className={btnStyles}>
-        <FaArrowLeft className={iconStyles} />
-      </button>
-      <button onClick={() => router.push(rightPath)} className={btnStyles}>
-        <FaArrowRight className={iconStyles} />
-      </button>
+      {leftPath && (  // Render left button only if leftPath is provided
+        <button onClick={() => router.push(leftPath)} className={btnStyles}>
+          <FaArrowLeft className={iconStyles} />
+        </button>
+      )}
+      {rightPath && (  // Render right button only if rightPath is provided
+        <button onClick={() => router.push(rightPath)} className={btnStyles}>
+          <FaArrowRight className={iconStyles} />
+        </button>
+      )}
     </div>
   );
 };
