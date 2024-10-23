@@ -46,7 +46,7 @@ const Page = () => {
             <h6 className='text-2xl font-bold text-center mt-11 mb-8 leading-snug'>
               Training Packages:
               <br/>
-              <span className="text-xs block">(Click bellow)</span>
+              <span className="text-xs block">(Click below)</span>
             </h6>
             <ul className="list-disc pl-6 text-lg leading-8 cursor-pointer">
             <Link href={`https://buy.stripe.com/dR6eWI1eX5On2Zi3cv`}>
