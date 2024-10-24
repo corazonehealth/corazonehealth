@@ -35,7 +35,7 @@ const Page = () => {
     Muscular Endurance is recommended 10-15 repetitions 2-3 sets, twice a week on non-consecutive days. 
     </p>
     <p className="text-lg leading-8 mb-6">    
-    Ideally resistance exercises : 3-6 excercises should include
+    Ideally resistance exercises : 3-6 exercises should include
     </p>
         <ul className="list-disc pl-6 text-lg leading-8">
             <li>Push: push up, front/side shoulder raises, shoulder press </li>
