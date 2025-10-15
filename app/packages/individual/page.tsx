@@ -61,7 +61,6 @@ const IndividualPackage = () => {
               <Link href={`https://buy.stripe.com/9AQ4i49LtekTczS006`}>
                 <li className='hover:text-accent transition-all'>
                   10 sessions: $800
-                  <span className='text-secondary-400'>(save $100)</span>
                 </li>
               </Link>
               <Link href={`https://buy.stripe.com/5kAaGsbTBekT2ZiaEL`}>
