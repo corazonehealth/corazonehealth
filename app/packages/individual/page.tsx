@@ -58,7 +58,7 @@ const IndividualPackage = () => {
                   5 sessions: $380
                 </li>
               </Link>
-              <Link href={`https://buy.stripe.com/9AQ4i49LtekTczS006`}>
+              <Link href={`https://buy.stripe.com/4gM6oJ4ZB1tR09DdLG4c80m`}>
                 <li className='hover:text-accent transition-all'>
                   10 sessions: $800
                 </li>
