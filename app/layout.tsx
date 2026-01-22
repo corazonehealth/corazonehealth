@@ -1,43 +1,44 @@
-import type { Metadata } from "next";
-import { Oswald, Roboto } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import { ClerkProvider } from '@clerk/nextjs'
+export const runtime = 'edge'
+import type { Metadata } from 'next'
+import { Oswald, Roboto } from 'next/font/google'
+import './globals.css'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
+// import { ClerkProvider } from '@clerk/nextjs'
 
 const oswald = Oswald({
-  subsets: ["latin"],
+  subsets: ['latin'],
   weight: ['200', '300', '400', '500', '600', '700'],
-  variable: '--font-oswald'
-});
+  variable: '--font-oswald',
+})
 
 const roboto = Roboto({
-  subsets: ["latin"],
+  subsets: ['latin'],
   weight: ['100', '300', '400', '500', '700', '900'],
-  variable: '--font-roboto'
-});
+  variable: '--font-roboto',
+})
 
 export const metadata: Metadata = {
-  title: "CoraZone",
-  description: "Get in your zone",
-};
+  title: 'CoraZone',
+  description: 'Get in your zone',
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
-    <ClerkProvider>
-      <html lang="en" className="bg-gray-200">
-        <body className={`${oswald.className} ${roboto.className} w-full max-w-[1920px] mx-auto bg-white`}>
-          <Header />
-          <main>
-          {children}
-          </main>
-          <Footer />
-        </body>
-      </html>
-    </ClerkProvider>
-  );
+    // <ClerkProvider>
+    <html lang='en' className='bg-gray-200'>
+      <body
+        className={`${oswald.className} ${roboto.className} w-full max-w-[1920px] mx-auto bg-white`}
+      >
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </body>
+    </html>
+    /* </ClerkProvider> */
+  )
 }
