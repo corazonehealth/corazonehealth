@@ -53,9 +53,9 @@ const IndividualPackage = () => {
                   3 sessions: $240
                 </li>
               </Link>
-              <Link href={`https://buy.stripe.com/28oeWI2j15On2Zi28h`}>
+              <Link href={`https://buy.stripe.com/bJe8wRdw77Sf4pT0YU4c80n`}>
                 <li className='hover:text-accent transition-all'>
-                  5 sessions: $380
+                  5 sessions: $400
                 </li>
               </Link>
               <Link href={`https://buy.stripe.com/4gM6oJ4ZB1tR09DdLG4c80m`}>
