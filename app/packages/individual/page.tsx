@@ -77,5 +77,5 @@ const IndividualPackage = () => {
   )
 }
 
-export const runtime = 'edge'
+// export const runtime = 'edge'
 export default IndividualPackage

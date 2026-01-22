@@ -1,5 +1,5 @@
-export const runtime = 'edge';
+// export const runtime = 'edge';
 
 export default function NotFound() {
-   return <div>Page not found</div>;
+  return <div>Page not found</div>
 }
