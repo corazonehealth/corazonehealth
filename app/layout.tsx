@@ -1,4 +1,4 @@
-export const runtime = 'edge'
+// export const runtime = 'edge'
 import type { Metadata } from 'next'
 import { Oswald, Roboto } from 'next/font/google'
 import './globals.css'
